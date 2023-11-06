@@ -1,0 +1,53 @@
+/*RESET CSS*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*PALETA DE CORES*/
+:root{
+    --cor-1:#07020d;
+    --cor-2:#D6EFFF;
+    --cor-3:#235789;
+    --cor-4:#f1d302;
+    --cor-5:#791776;
+}
+/*CORPO DA PÁGINA*/
+body{background: var(--cor-2);}
+/*BARRA DE NAVEGAÇÃO*/
+
+.NavBar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 5vh;
+    z-index: 100;
+}
+
+.Logo-NavBar{ /*Logo da Barra de navegação*/
+    text-decoration: none;
+    color: var(--cor-1);
+    font-size: 0.5
+    5em;
+    font-weight: 600;
+    width: 190px;
+}
+.NavBar nav{ /*Ítens de navegaçâo*/
+    width: 35%;
+}
+ul.submenu {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+}
+
+li:hover ul.submenu {
+    display: block;
+}
+
+ul.submenu li {
+    display: block;
+}
